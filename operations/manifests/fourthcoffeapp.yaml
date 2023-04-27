@@ -67,7 +67,7 @@ metadata:
   labels:
     app: fourthcoffee-app
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: fourthcoffee-app
   ports:
