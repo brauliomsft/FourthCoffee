@@ -56,7 +56,7 @@ spec:
         - name: DBSECRET
           value: secret
         - name: STOREID
-          value: '3'
+          value: '1'
 ---
 #Service for Front End
 apiVersion: v1
@@ -72,7 +72,7 @@ spec:
     app: fourthcoffee-app
   ports:
   - name: http
-    port: 5000
+    port: 80
     targetPort: 5000
 ---
 #Deployment for MySQL Pod using a custom container
